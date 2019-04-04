@@ -1,19 +1,20 @@
 * { box-sizing: border-box; }
 #profile, #projects, #skills, #blog {
-    background-color: #212121;
-    color: white;
+    background-color: whitesmoke;
+    color: #212121;
 }
 #profile, #skills, #blog {
-    height: 91vh;
+    height: 90vh;
 }
 progress[value] {
     -webkit-appearance: none;
     appearance: none;
     width: 250px;
     height: 20px;
+    margin-bottom: 5px;
 }
 progress[value]::-webkit-progress-bar {
-    background-color: #eee;
+    background-color: #21212131;
     border-radius: 2px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4) inset;
 }
@@ -30,4 +31,34 @@ progress[value]::-webkit-progress-value::before {
     position: absolute;
     right: 0;
     top: -125%;
+}
+p {
+    font-size: 16px !important;
+}
+h1 {
+    font-size: 3.6rem !important;
+}
+.tabs {
+    background-color: #212121 !important;
+    height: 10vh !important;
+}
+.tabs .tab {
+    height: 10vh !important;
+    line-height: 10vh !important;
+}
+.tabs .tab a {
+    color: whitesmoke !important;
+    transition: background-color .5s ease !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+}
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.tabs .indicator {
+    background-color: whitesmoke !important;
+    height: 4px !important;
+}
+div.active {
+    display: flex !important;
 }
