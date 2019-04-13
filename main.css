@@ -1,9 +1,9 @@
 * { box-sizing: border-box; }
-body {
+#profile, #projects, #skills, #blog {
     background-color: whitesmoke;
     color: #212121;
 }
-#mobileProfile, #mobileSkills, #mobileBlog {
+#profile, #skills, #blog {
     height: 90vh;
 }
 progress[value] {
@@ -14,7 +14,7 @@ progress[value] {
     margin-bottom: 5px;
 }
 progress[value]::-webkit-progress-bar {
-    background-color: silver;
+    background-color: #21212131;
     border-radius: 2px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4) inset;
 }
@@ -36,7 +36,7 @@ p {
     font-size: 16px !important;
 }
 h1 {
-    font-size: 2.6rem !important;
+    font-size: 3.6rem !important;
 }
 .tabs {
     background-color: #212121 !important;
@@ -59,56 +59,6 @@ h1 {
     background-color: whitesmoke !important;
     height: 4px !important;
 }
-
-/* styles for desktop elements */
-.desktop-view {
-    display: none;
-} 
-.desktop-view, .desktopnav, .main-contents, #desktopProfile,
-#desktopProjects, #desktopSkills, #desktopBlog  {
-    height: 100vh;
-}
-.desktopnav {
-    background-color: #212121;
-    padding: 0 !important;
-}
-.navheader {
-    background-color: white;
-    color: #212121;
-    padding: 30px 30px 50px;
-    text-align: right;
-}
-ul.nav li > a {
-    display: block;
-    color: whitesmoke !important;
-    font-size: 16px !important;
-    font-weight: 500 !important;
-}
-ul.nav li > a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-ul.nav li {
-    border-bottom: 1px solid whitesmoke;
-}
-#desktopProjects, #desktopSkills, #desktopBlog {
-    display: none; /* all hidden at first except #desktopProfile */
-}
-.animatetab {
-    position: relative;
-    animation: animatetab 1s ease;
-}
-@keyframes animatetab {
-    from {right: -50px; opacity: 0;}
-    to {right: 0; opacity: 1;}
-}
-
-@media screen and (min-width: 800px) {
-    .mobile-view {display: none !important;}
-    .desktop-view {display: block;}
-    h1 {
-        font-size: 4rem !important;
-    }
-    p {
-        font-size: 1.3rem !important;
-    }
+div.active {
+    display: flex !important;
 }
