@@ -6,7 +6,7 @@
     <title>Ola Eleyinmi | Personal Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="author" content="Olasunkanmi Eleyinmi"/>
-    <meta name="description" content="Personal Website of Olasunkanmi Eleyinmi"/>
+    <meta name="description" content="Personal Website of Olasunkanmi Eleyinmi. Ola is a Software Developer who has a knack for building mobile, web and desktop apps that satisfy all usability goals."/>
     <meta name="keywords" content="Software Development, Websites, Desktop Apps, Mobile Apps Ola Eleyinmi"/>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -17,22 +17,27 @@
 </head>
 <body>
 
-    <div class="row">
+    <!-- Mobile view -->
+    <div class="row mobile-view">
         <div class="col s12" style="padding:0;">
-                <div id="profile" class="col s12 valign-wrapper">
+                <div id="mobileProfile" class="col s12 valign-wrapper">
                     <div class="container">
                         <h1>Ola <span style="font-weight:500;">Eleyinmi</span></h1>
                         <p>
                             I am a Software Developer who is passionate about building amazing
                             and efficient web, mobile an desktop applications.
                         </p>
-                        <a href="github.com"><i class="fas fa-"></i></a>
-                        <a href="medium.com"><i class="fas fa-"></i></a>
-                        <a href="twitter.com"><i class="fas fa-"></i></a>
-                        <a href="linkedin.com"><i class="fas fa-"></i></a>
+                        <a href="https://github.com/tomelleyz"><i class="fab fa-github" style="font-size: 24px; color: #212121; margin: 5px 5px 5px 0;"></i></a>
+                        <a href="https://medium.com/olaeleyinmi"><i class="fab fa-medium" style="font-size: 24px; color: #212121; margin: 5px;"></i></a>
+                        <a href="https://twitter.com/TomElleyz"><i class="fab fa-twitter-square" style="font-size: 24px; color: #212121; margin: 5px;"></i></a>
+                        <a href="https://www.linkedin.com/in/olasunkanmi-eleyinmi-029a69157/"><i class="fab fa-linkedin" style="font-size: 24px; color: #212121; margin: 5px;"></i></a>
+                        <br>
+                        <a href="mailto:eleyinmiolasunkanmi@gmail.com"><i class="fas fa-envelope" style="font-size: 24px; color: #212121; margin: 10px 0;"></i> eleyinmiolasunkanmi@gmail.com</a>
+                        <br>
+                        <a href="tel:+2347062560747"><i class="fas fa-phone" style="font-size: 24px; color: #212121; margin: 5px 0;"></i> +2347062560747</a>
                     </div>
                 </div>
-                <div id="projects" class="col s12 center-align">
+                <div id="mobileProjects" class="col s12 center-align">
                     <div class="row">
                         <div class="col s12"><img src="images/Headshot.jpg" alt="project1" class="responsive-img"></div>
                         <div class="col s12"><img src="images/Headshot.jpg" alt="project2" class="responsive-img"></div>
@@ -42,8 +47,8 @@
                         <div class="col s12"><img src="images/Headshot.jpg" alt="project6" class="responsive-img"></div>
                     </div>
                 </div>
-                <div id="skills" class="col s12 valign-wrapper">
-                    <div class="">
+                <div id="mobileSkills" class="col s12 valign-wrapper">
+                    <div>
                         <div class="container">
                             <p>HTML</p>
                             <progress value="0.90"></progress>
@@ -66,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="blog" class="col s12 valign-wrapper">
+                <div id="mobileBlog" class="col s12 valign-wrapper">
                     <div class="container">
                         <P>
                             Read my articles on <a href="http://www.medium.com/@olaeleyinmi" target="_blank">Medium</a>
@@ -82,15 +87,142 @@
         </div>
     </div>
 
+    <!-- Desktop View -->
+    <div class="row desktop-view" style="margin-bottom: 0;">
+        <div class="col s4 desktopnav z-depth-1">
+            <div class="navheader">
+                <h1>Ola <span style="font-weight: 500;">Eleyinmi</span></h1>
+                <p>Software Developer</p>
+            </div>
+            <ul class="nav" style="margin: 0;">
+                <li><a class="btn-flat btn-large waves-effect waves-light displayProfile" href="javascript:void(0)" onclick="displayProfile()">PROFILE</a></li>
+                <li><a class="btn-flat btn-large waves-effect waves-light displayProjects" href="javascript:void(0)" onclick="displayProjects()">PROJECTS</a></li>
+                <li><a class="btn-flat btn-large waves-effect waves-light displaySkills" href="javascript:void(0)" onclick="displaySkills()">SKILLS</a></li>
+                <li><a class="btn-flat btn-large waves-effect waves-light displayBlog" href="javascript:void(0)" onclick="displayBlog()">BLOG</a></li>
+            </ul>
+        </div>
+        <div class="col s8 main-contents">
+            <div id="desktopProfile" class="valign-wrapper">
+                <div class="container">
+                    <h1>Ola <span style="font-weight: 500;">Eleyinmi</span></h1>
+                    <p>
+                        I am a Software Developer who is passionate about building amazing
+                        and efficient web, mobile an desktop applications.
+                    </p>
+                    <a href="https://github.com/tomelleyz"><i class="fab fa-github" style="font-size: 24px; color: #212121; margin: 5px 5px 5px 0;"></i></a>
+                    <a href="https://medium.com/olaeleyinmi"><i class="fab fa-medium" style="font-size: 24px; color: #212121; margin: 5px;"></i></a>
+                    <a href="https://twitter.com/TomElleyz"><i class="fab fa-twitter-square" style="font-size: 24px; color: #212121; margin: 5px;"></i></a>
+                    <a href="https://www.linkedin.com/in/olasunkanmi-eleyinmi-029a69157/"><i class="fab fa-linkedin" style="font-size: 24px; color: #212121; margin: 5px;"></i></a>
+                    <br>
+                    <span>Send me a mail:</span><a href="mailto:eleyinmiolasunkanmi@gmail.com"><!--<i class="fas fa-envelope" style="font-size: 24px; color: #212121; margin: 10px 0;"></i>--> eleyinmiolasunkanmi@gmail.com</a>
+                    <br>
+                    <span>Call:</span><a href="tel:+2347062560747"><!--<i class="fas fa-phone" style="font-size: 24px; color: #212121; margin: 5px 0;"></i>--> +2347062560747</a>
+                </div>
+            </div>
+            <div id="desktopProjects" class="container valign-wrapper">
+                <div class="row">
+                    <div class="col s12 m6 l4"><img src="Images/Headshot.jpg" alt="project1" class="responsive-img"></div>
+                    <div class="col s12 m6 l4"><img src="Images/Headshot.jpg" alt="project2" class="responsive-img"></div>
+                    <div class="col s12 m6 l4"><img src="Images/Headshot.jpg" alt="project3" class="responsive-img"></div>
+                    <div class="col s12 m6 l4"><img src="Images/Headshot.jpg" alt="project4" class="responsive-img"></div>
+                    <div class="col s12 m6 l4"><img src="Images/Headshot.jpg" alt="project5" class="responsive-img"></div>
+                    <div class="col s12 m6 l4"><img src="Images/Headshot.jpg" alt="project6" class="responsive-img"></div>
+                </div>
+            </div>
+            <div id="desktopSkills"class="container valign-wrapper">
+                <div class="row">
+                    <div class="col s12 m6 l6 container">
+                        <p>HTML</p>
+                        <progress value="0.90"></progress>
+                    </div>
+                    <div class="col s12 m6 l6 container">
+                        <p>CSS</p> 
+                        <progress value="0.90"></progress>
+                    </div>
+                    <div class="col s12 m6 l6 container">
+                        <p>JavaScript</p>
+                        <progress value="0.50"></progress>
+                    </div>
+                    <div class="col s12 m6 l6 container">
+                        <p>C#<p>
+                        <progress value="0.40"></progress>
+                    </div>
+                    <div class="col s12 m6 l6 container">
+                        <p>PHP/MySQL</p>
+                        <progress value="0.30"></progress>
+                    </div>
+                </div>
+            </div>
+            <div id="desktopBlog"class="valign-wrapper">
+                <div class="container">
+                    <P>
+                        Read my articles on <a href="http://www.medium.com/@olaeleyinmi" target="_blank">Medium</a>
+                    </P>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!--JS scripts-->
     <script src="tools/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="tools/materialize.min.js"></script>
-    <script src="main.js"></script>
     <script>
+        /* script for mobile tabs */
         $(document).ready(function() {
             $('.tabs').tabs({swipeable: true, duration: 65});
-        })
+            
+            $(".displayProfile").click(function(){
+                $("#desktopProjects").fadeOut();
+                $("#desktopSkills").fadeOut();
+                $("#desktopBlog").fadeOut();
+                $("#desktopProfile").fadeIn();
+            });
+            $(".displayProjects").click(function(){
+                $("#desktopProfile").fadeOut();
+                $("#desktopSkills").fadeOut();
+                $("#desktopBlog").fadeOut();
+                $("#desktopProjects").fadeIn();
+            });
+            $(".displaySkills").click(function(){
+                $("#desktopProfile").fadeOut();
+                $("#desktopProjects").fadeOut();
+                $("#desktopBlog").fadeOut();
+                $("#desktopSkills").fadeIn();
+            });
+            $(".displayBlog").click(function(){
+                $("#desktopProfile").fadeOut();
+                $("#desktopProjects").fadeOut();
+                $("#desktopSkills").fadeOut();
+                $("#desktopBlog").fadeIn();
+            });
+        });
+
+        /* script for desktop 'tabs' */
+        /*function displayProfile() {
+            document.getElementById('desktopProfile').style.display = "flex";
+            //document.getElementById('desktopProjects').style.display = "none";
+            //document.getElementById('desktopSkills').style.display = "none";
+            //document.getElementById('desktopBlog').style.display = "none";
+        }
+        function displayProjects() {
+            //document.getElementById('desktopProfile').style.display = "none";
+            document.getElementById('desktopProjects').style.display = "flex";
+            //document.getElementById('desktopSkills').style.display = "none";
+            //document.getElementById('desktopBlog').style.display = "none";
+        }
+        function displaySkills() {
+            //document.getElementById('desktopProfile').style.display = "none";
+            //document.getElementById('desktopProjects').style.display = "none";
+            document.getElementById('desktopSkills').style.display = "flex";
+            //document.getElementById('desktopBlog').style.display = "none";
+        }
+        function displayBlog() {
+            //document.getElementById('desktopProfile').style.display = "none";
+            //document.getElementById('desktopProjects').style.display = "none";
+            //document.getElementById('desktopSkills').style.display = "none";
+            document.getElementById('desktopBlog').style.display = "flex";
+        }*/
     </script>
 </body>
 </html>
