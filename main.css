@@ -9,31 +9,8 @@ body {
 #mobileProfile, #mobileProjects, #mobileSkills, #mobileBlog {
     animation: fadeEffect 1s ease-out;
 }
-progress[value] {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 250px;
-    height: 20px;
-    margin-bottom: 5px;
-}
-progress[value]::-webkit-progress-bar {
-    background-color: silver;
-    border-radius: 2px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4) inset;
-}
-progress[value]::-webkit-progress-value {
-    background-image: 
-        linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
-        linear-gradient(to right, #09c, #f44);
-    border-radius: 2px;
-    background-size: 35px 20px, 100% 100%, 100% 100%;
-}
-progress[value]::-webkit-progress-value::before {
-    content: '90%';
-    position: absolute;
-    right: 0;
-    top: -125%;
+#mobileProjects {
+    margin: 25px auto 50px;
 }
 p {
     font-size: 16px !important;
@@ -70,19 +47,24 @@ div.active {
 .desktop-view {
     display: none;
 } 
-.desktop-view, .desktopnav, .main-contents, #desktopProfile,
-#desktopProjects, #desktopSkills, #desktopBlog  {
+#desktopProfile, #desktopSkills, #desktopBlog {
     height: 100vh;
+}
+#desktopProjects {
+    padding: 3rem 0;
 }
 .desktopnav {
     background-color: #212121;
     padding: 0 !important;
+    height: 100%;
+    position: fixed;
+    top: 0;
 }
 .navheader {
-    background-color: white;
+    background-color: hsla(0, 50%, 100%, 0.9);
     color: #212121;
-    padding: 30px 30px 50px;
-    text-align: right;
+    padding: 20px;
+    text-align: center;
 }
 .desktopnav > .nav li > a {
     display: block;
@@ -113,6 +95,7 @@ a.activetablink {
     to {opacity: 1;}
 }
 
+/* Media Queries */
 @media screen and (orientation: landscape) {
     #mobileProfile, #mobileSkills {
         height: auto;
@@ -121,9 +104,6 @@ a.activetablink {
 @media screen and (min-width: 780px) {
     .mobile-view {display: none !important;}
     .desktop-view {display: block;}
-    h1 {
-        font-size: 4rem !important;
-    }
     p {
         font-size: 1.3rem !important;
     }
