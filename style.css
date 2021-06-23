@@ -21,13 +21,15 @@ body {
   background-color: #ffffff;
   color: #212353;
   font-family: "Helvetica", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem 1rem;
+  padding: 1rem;
   text-align: center;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 section {
@@ -65,8 +67,8 @@ a {
   font-weight: bold;
   background: linear-gradient(
     to bottom,
-    transparent 75%,
-    rgba(0, 0, 0, 0.2) 75%
+    transparent 60%,
+    rgba(0, 0, 0, 0.2) 60%
   );
   z-index: 1;
 }
@@ -78,11 +80,7 @@ a::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    transparent 10%,
-    rgba(0, 0, 0, 0.2) 10%
-  );
+  background: linear-gradient(to bottom, transparent 5%, rgba(0, 0, 0, 0.2) 5%);
 
   z-index: -1;
   opacity: 0;
