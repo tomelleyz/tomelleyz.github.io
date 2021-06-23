@@ -93,7 +93,7 @@ a:focus::before {
 }
 
 .personal-links-section {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .personal-link:not(:last-of-type) {
