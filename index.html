@@ -2,54 +2,433 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ola Eleyinmi</title>
-    <meta name="author" content="Ola Eleyinmi" />
-    <meta name="description" content="Software Developer" />
-	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="style.css" />
+    <link href="/index.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section>
-      <div class="img-container">
-        <img src="./ola.jpg" alt="Ola" />
-      </div>
+    <main>
+      <header
+        class="font-extralight mx-auto max-w-[1440px] xl:px-20 text-sm lg:px-16 py-5 px-10"
+      >
+        <span>OLA</span> <br />
+        <span>ELEYINMI</span>
+      </header>
 
-      <p class="intro-text">
-        Hi! 👋 My name is Ola. I'm a Software Developer based in Lagos, Nigeria.
-      </p>
+      <section
+        class="max-w-[1440px] mx-auto xl:py-32 xl:px-20 lg:py-20 lg:px-16 py-16 px-10"
+      >
+        <h1 class="text-4xl lg:text-5xl xl:text-6xl font-semibold sm:max-w-3/4">
+          I'm Ola, a frontend developer
+          <span class="text-gray-100">
+            that creates experiences that feel as good as they look
+          </span>
+        </h1>
 
-      <p class="details-text">
-        I build performant Web applications that are aesthetically pleasing and
-        accessible. You can find my up-to-date portfolio
-        <a
-          href="https://www.notion.so/Ola-Eleyinmi-3d11a9a8aeb9457b9bf57731d477f0a7"
+        <div class="max-w-80 ml-auto mt-12 lg:mt-16">
+          <h2 class="text-gray-100">ALSO,</h2>
+          <p class="text-balance">
+            I've worked with brands and agencies to create delightful
+            experiences for users such as Mantis Piping, GoodCharlie, Power
+            Sync, AfriHealth, and Anakle.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="max-w-[1440px] mx-auto xl:py-32 xl:px-20 lg:py-20 lg:px-16 py-16 px-10"
+      >
+        <div
+          class="flex relative items-start justify-between flex-col lg:flex-row xl:gap-10 lg:gap-6 gap-8"
         >
-          here.
-        </a>
-      </p>
+          <div class="lg:sticky lg:top-32 lg:w-1/2">
+            <h2
+              class="text-2xl font-semibold lg:text-6xl xl:text-8xl lg:font-normal lg:tracking-tighter"
+            >
+              Featured <br class="hidden lg:block" />
+              work
+            </h2>
+          </div>
+          <div class="lg:w-1/2 flex flex-col gap-16 lg:gap-24">
+            <div
+              class="rounded-xl select-none overflow-hidden group w-full bg-gray-200 hover:-translate-y-2 duration-300 transition-transform will-change-transform"
+            >
+              <a
+                href="https://www.mantispiping.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="h-auto w-full relative">
+                  <img
+                    src="/mantis-piping.png"
+                    alt="Mantis Piping"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    class="object-cover object-center aspect-4/3 w-full h-full"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gray-300/20 opacity-0 duration-300 transition-opacity group-hover:opacity-100"
+                  ></div>
+                </div>
+                <div class="p-6 font-semibold text-lg">
+                  <h3>Mantis Piping</h3>
+                  <p class="text-gray-100">Development, CRM Automation</p>
+                </div>
+              </a>
+            </div>
 
-      <p>
-        Need to contact me? Feel free to
-        <a href="mailto:eleyinmiolasunkanmi@gmail.com">send me an email.</a>
-      </p>
+            <div
+              class="rounded-xl select-none overflow-hidden group w-full bg-gray-200 hover:-translate-y-2 duration-300 transition-transform will-change-transform"
+            >
+              <a
+                href="https://www.goodcharlie.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="h-auto w-full relative">
+                  <img
+                    src="/goodcharlie.png"
+                    alt="GoodCharlie"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    class="object-cover object-center aspect-4/3 w-full h-full"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gray-300/20 opacity-0 duration-300 transition-opacity group-hover:opacity-100"
+                  ></div>
+                </div>
+                <div class="p-6 font-semibold text-lg">
+                  <h3>GoodCharlie</h3>
+                  <p class="text-gray-100">Development, CRM Automation</p>
+                </div>
+              </a>
+            </div>
 
-      <div class="personal-links-section">
-        <a href="https://github.com/tomelleyz" class="personal-link">
-          GitHub
-        </a>
-        <a
-          href="https://linkedin.com/in/olasunkanmi-eleyinmi"
-          class="personal-link"
+            <div
+              class="rounded-xl select-none overflow-hidden group w-full bg-gray-200 hover:-translate-y-2 duration-300 transition-transform will-change-transform"
+            >
+              <a
+                href="https://powersync.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="h-auto w-full relative">
+                  <img
+                    src="/powersync.png"
+                    alt="Power Sync"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    class="object-cover object-center aspect-4/3 w-full h-full"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gray-300/20 opacity-0 duration-300 transition-opacity group-hover:opacity-100"
+                  ></div>
+                </div>
+                <div class="p-6 font-semibold text-lg">
+                  <h3>Power Sync</h3>
+                  <p class="text-gray-100">UI Development</p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="rounded-xl select-none overflow-hidden group w-full bg-gray-200 hover:-translate-y-2 duration-300 transition-transform will-change-transform"
+            >
+              <a
+                href="https://olaeleyinmi.notion.site/Ola-Eleyinmi-3d11a9a8aeb9457b9bf57731d477f0a7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="h-auto w-full relative">
+                  <img
+                    src="/novel-ag-dashboard.png"
+                    alt="Novel AG Dashboard"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    class="object-cover object-center aspect-4/3 blur-xs w-full h-full"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gray-300/20 opacity-0 duration-300 transition-opacity group-hover:opacity-100"
+                  ></div>
+                  <div
+                    class="p-3 rounded-md text-sm sm:p-6 absolute bg-gray-200 sm:rounded-xl -translate-1/2 left-1/2 top-1/2 font-semibold sm:text-lg"
+                  >
+                    <h3 class="text-center">View more projects</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-200">
+        <div
+          class="max-w-[1440px] mx-auto xl:py-32 xl:px-20 lg:py-20 lg:px-16 py-16 px-10"
         >
-          LinkedIn
-        </a>
-        <a href="https://olaeleyinmi.medium.com/" class="personal-link">
-          Medium
-        </a>
-      </div>
-    </section>
+          <h2
+            class="text-2xl text-gray-100 font-semibold text-center lg:text-6xl xl:text-8xl lg:font-normal lg:tracking-tighter"
+          >
+            Skills
+          </h2>
+
+          <ul
+            class="w-full list-none flex gap-4 mt-4 justify-center p-6 flex-wrap rounded-xl bg-gray-200"
+          >
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              JavaScript
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              React
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              NextJS
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              HTML & CSS
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              Node.js
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              Express
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              MongoDB
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              MySQL
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              PHP
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              WordPress
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              GraphQL
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              Cypress
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              I18n
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              Git & GitHub
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              DigitalOcean
+            </li>
+            <li
+              class="bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl"
+            >
+              + more
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        class="max-w-[1440px] mx-auto xl:py-32 xl:px-20 lg:py-20 lg:px-16 py-16 px-10"
+      >
+        <div
+          class="flex relative items-start justify-between flex-col lg:flex-row xl:gap-10 lg:gap-6 gap-8"
+        >
+          <div class="lg:w-1/2">
+            <h2
+              class="text-2xl font-semibold lg:text-6xl xl:text-8xl lg:font-normal lg:tracking-tighter"
+            >
+              Writing
+            </h2>
+
+            <p class="mt-10 text-gray-100 text-pretty">
+              I enjoy sharing things I learn by writing about them.
+            </p>
+
+            <ul class="list-none flex flex-col pt-6 divide-y divide-white">
+              <li>
+                <a
+                  href="https://tomelleyz.hashnode.dev/how-to-make-anchor-links-work-with-utm-parameters-in-the-url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="py-6 flex flex-col gap-2 text-lg"
+                >
+                  <span>
+                    How to make anchor links work with UTM parameters in the URL
+                  </span>
+                  <span class="text-gray-100">Feb 26, 2024</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://tomelleyz.hashnode.dev/preserving-line-breaks-from-an-api-string-response-when-rendered-in-your-react-component"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="py-8 flex flex-col gap-2 text-lg"
+                >
+                  <span>
+                    Preserving line breaks from an API string response when
+                    rendered in your React component
+                  </span>
+                  <span class="text-gray-100">Jan 22, 2024</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://tomelleyz.hashnode.dev/setting-up-hosting-on-digitalocean-app-platform-and-dns-management-on-godaddy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="py-8 flex flex-col gap-2 text-lg"
+                >
+                  <span>
+                    Setting up hosting on DigitalOcean App Platform and DNS
+                    management on GoDaddy
+                  </span>
+                  <span class="text-gray-100">Jan 15, 2024</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray-200">
+        <div
+          class="max-w-[1440px] mx-auto xl:py-32 xl:px-20 lg:py-20 lg:px-16 py-16 px-10"
+        >
+          <h2
+            class="text-2xl text-gray-100 font-semibold text-center lg:text-6xl xl:text-8xl lg:font-normal lg:tracking-tighter"
+          >
+            Fun
+          </h2>
+
+          <p class="text-center max-w-xs mx-auto text-balance mt-10">
+            I enjoy watching sports like Football, Basketball and Tennis, and I
+            try to exercise regularly. But whether I'm working or relaxing, I
+            listen to music a lot. Here are the songs I can't get enough of
+            lately.
+          </p>
+
+          <div class="max-w-3xl mx-auto pt-16">
+            <iframe
+              class="rounded-xl shadow-xl"
+              src="https://open.spotify.com/embed/playlist/2lKUhAftLl47Ba5lTjyxl8?utm_source=generator"
+              width="100%"
+              height="352"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="max-w-[1440px] mx-auto xl:py-32 xl:px-20 lg:py-20 lg:px-16 py-16 px-10"
+      >
+        <div
+          class="flex relative items-stretch justify-between flex-col lg:flex-row xl:gap-10 lg:gap-6 gap-16"
+        >
+          <div class="w-full lg:w-1/2">
+            <h2
+              class="text-2xl max-w-64 lg:max-w-none font-semibold lg:text-6xl xl:text-8xl lg:font-normal lg:tracking-tighter"
+            >
+              Want to create something extraordinary together?
+            </h2>
+            <p class="flex flex-col mt-10 gap-5 text-ellipsis">
+              <span class="text-gray-100">Drop me an email.</span>
+              <a
+                href="mailto:eleyinmiolasunkanmi@gmail.com"
+                class="text-lg lg:text-2xl font-medium overflow-hidden text-ellipsis"
+                >eleyinmiolasunkanmi@gmail.com</a
+              >
+            </p>
+          </div>
+          <div
+            class="w-full lg:w-1/2 flex flex-row items-end lg:text-right lg:flex-col justify-between"
+          >
+            <div>
+              <h3 class="text-gray-100">SOCIALS</h3>
+              <ul
+                class="list-none text-lg lg:text-2xl flex pt-10 flex-col gap-6"
+              >
+                <li>
+                  <a
+                    href="https://github.com/tomelleyz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://linkedin.com/in/olasunkanmi-eleyinmi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="relative rounded-full size-32 lg:size-40 overflow-clip">
+              <img
+                src="/ola.jpg"
+                alt="Portrait of Ola in anime style"
+                decoding="async"
+                loading="lazy"
+                sizes="50vw"
+                class="object-center object-cover aspect-square"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
