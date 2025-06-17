@@ -60,7 +60,7 @@
         class="max-w-[1440px] mx-auto xl:py-32 xl:px-20 lg:py-20 lg:px-16 py-16 px-10"
       >
         <h1
-          class="header__title text-4xl font-semibold lg:text-5xl xl:text-[64px] sm:max-w-3/4 tracking-tight"
+          class="header__title text-4xl text-balance sm:text-wrap font-semibold lg:text-5xl xl:text-[64px] sm:max-w-3/4 tracking-tight"
         >
           I'm Ola, a frontend developer
           <span class="text-gray-100">
@@ -86,7 +86,7 @@
         >
           <div class="lg:sticky lg:top-32 lg:w-1/2">
             <h2
-              class="text-2xl font-semibold lg:text-6xl xl:text-8xl lg:font-normal lg:tracking-tighter"
+              class="text-3xl font-semibold lg:text-6xl xl:text-8xl lg:font-normal lg:tracking-tighter"
             >
               Featured <br class="hidden lg:block" />
               work
@@ -102,14 +102,19 @@
                 rel="noopener noreferrer"
               >
                 <div class="h-auto w-full relative overflow-hidden">
-                  <img
-                    src="/mantis-piping.png"
-                    alt="Mantis Piping"
-                    decoding="async"
-                    loading="lazy"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    class="object-cover object-center aspect-4/3 w-full h-full"
-                  />
+                  <picture>
+                    <source type="image/webp" srcset="/mantis-piping.webp" />
+                    <source type="image/png" srcset="/mantis-piping.png" />
+                    <img
+                      src="/mantis-piping.png"
+                      alt="Mantis Piping"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      class="object-cover object-center aspect-4/3 w-full h-full"
+                    />
+                  </picture>
+
                   <div
                     class="absolute inset-0 bg-gray-300/20 opacity-0 duration-300 transition-opacity group-hover:opacity-100"
                   ></div>
@@ -130,14 +135,19 @@
                 rel="noopener noreferrer"
               >
                 <div class="h-auto w-full relative overflow-hidden">
-                  <img
-                    src="/goodcharlie.png"
-                    alt="GoodCharlie"
-                    decoding="async"
-                    loading="lazy"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    class="object-cover object-center aspect-4/3 w-full h-full"
-                  />
+                  <picture>
+                    <source type="image/webp" srcset="/goodcharlie.webp" />
+                    <source type="image/png" srcset="/goodcharlie.png" />
+                    <img
+                      src="/goodcharlie.png"
+                      alt="GoodCharlie"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      class="object-cover object-center aspect-4/3 w-full h-full"
+                    />
+                  </picture>
+
                   <div
                     class="absolute inset-0 bg-gray-300/20 opacity-0 duration-300 transition-opacity group-hover:opacity-100"
                   ></div>
@@ -158,14 +168,19 @@
                 rel="noopener noreferrer"
               >
                 <div class="h-auto w-full relative overflow-hidden">
-                  <img
-                    src="/powersync.png"
-                    alt="Power Sync"
-                    decoding="async"
-                    loading="lazy"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    class="object-cover object-center aspect-4/3 w-full h-full"
-                  />
+                  <picture>
+                    <source type="image/webp" srcset="/powersync.webp" />
+                    <source type="image/png" srcset="/powersync.png" />
+                    <img
+                      src="/powersync.png"
+                      alt="Power Sync"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      class="object-cover object-center aspect-4/3 w-full h-full"
+                    />
+                  </picture>
+
                   <div
                     class="absolute inset-0 bg-gray-300/20 opacity-0 duration-300 transition-opacity group-hover:opacity-100"
                   ></div>
@@ -186,14 +201,22 @@
                 rel="noopener noreferrer"
               >
                 <div class="h-auto w-full relative overflow-hidden">
-                  <img
-                    src="/novel-ag-dashboard.png"
-                    alt="Novel AG Dashboard"
-                    decoding="async"
-                    loading="lazy"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    class="object-cover object-center aspect-4/3 blur-xs w-full h-full"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="/novel-ag-dashboard.webp"
+                    />
+                    <source type="image/png" srcset="/novel-ag-dashboard.png" />
+                    <img
+                      src="/novel-ag-dashboard.png"
+                      alt="Novel AG Dashboard"
+                      decoding="async"
+                      loading="lazy"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      class="object-cover object-center aspect-4/3 blur-xs w-full h-full"
+                    />
+                  </picture>
+
                   <div
                     class="absolute inset-0 bg-gray-300/20 opacity-0 duration-300 transition-opacity group-hover:opacity-100"
                   ></div>
@@ -214,7 +237,7 @@
           class="max-w-[1440px] mx-auto xl:py-32 xl:px-20 lg:py-20 lg:px-16 py-16 px-10"
         >
           <h2
-            class="text-2xl text-gray-100 font-semibold text-center lg:text-6xl xl:text-8xl lg:font-normal lg:tracking-tighter"
+            class="text-3xl text-gray-100 font-semibold text-center lg:text-6xl xl:text-8xl lg:font-normal lg:tracking-tighter"
           >
             Skills
           </h2>
@@ -314,7 +337,7 @@
         >
           <div class="lg:w-1/2">
             <h2
-              class="text-2xl font-semibold lg:text-6xl xl:text-8xl lg:font-normal lg:tracking-tighter"
+              class="text-3xl font-semibold lg:text-6xl xl:text-8xl lg:font-normal lg:tracking-tighter"
             >
               Writing
             </h2>
@@ -377,7 +400,7 @@
           class="max-w-[1440px] mx-auto xl:py-32 xl:px-20 lg:py-20 lg:px-16 py-16 px-10"
         >
           <h2
-            class="text-2xl text-gray-100 font-semibold text-center lg:text-6xl xl:text-8xl lg:font-normal lg:tracking-tighter"
+            class="text-3xl text-gray-100 font-semibold text-center lg:text-6xl xl:text-8xl lg:font-normal lg:tracking-tighter"
           >
             Fun
           </h2>
@@ -391,6 +414,7 @@
 
           <div class="max-w-3xl mx-auto pt-16">
             <iframe
+              title="Spotify Player"
               class="rounded-xl shadow-xl"
               src="https://open.spotify.com/embed/playlist/2lKUhAftLl47Ba5lTjyxl8?utm_source=generator"
               width="100%"
@@ -412,7 +436,7 @@
         >
           <div class="w-full lg:w-1/2">
             <h2
-              class="footer__title text-[24px] leading-[1.15] max-w-64 lg:max-w-none font-semibold will-change-transform lg:text-[60px] xl:text-[96px] lg:font-normal lg:tracking-tighter"
+              class="footer__title text-[30px] leading-[1.15] max-w-64 lg:max-w-none font-semibold will-change-transform lg:text-[60px] xl:text-[96px] lg:font-normal lg:tracking-tighter"
             >
               Want to create something extraordinary together?
             </h2>
@@ -461,14 +485,18 @@
             </div>
 
             <div class="relative rounded-full size-32 lg:size-40 overflow-clip">
-              <img
-                src="/ola.jpg"
-                alt="Portrait of Ola in anime style"
-                decoding="async"
-                loading="lazy"
-                sizes="50vw"
-                class="object-center object-cover aspect-square"
-              />
+              <picture>
+                <source type="image/webp" srcset="/ola.webp" />
+                <source type="image/jpeg" srcset="/ola.jpg" />
+                <img
+                  src="/ola.jpg"
+                  alt="Portrait of Ola in anime style"
+                  decoding="async"
+                  loading="lazy"
+                  sizes="50vw"
+                  class="object-center object-cover aspect-square"
+                />
+              </picture>
             </div>
           </div>
         </div>
