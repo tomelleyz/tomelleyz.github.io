@@ -297,9 +297,11 @@
                     class="absolute inset-0 bg-gray-300/20 opacity-0 duration-300 transition-opacity group-hover:opacity-100"
                   ></div>
                   <div
-                    class="p-3 rounded-md text-sm flex items-start gap-2 sm:p-6 absolute bg-gray-200 sm:rounded-xl -translate-1/2 left-1/2 top-1/2 font-semibold sm:text-lg"
+                    class="p-3 rounded-md text-sm flex items-center sm:items-start gap-2 sm:p-6 absolute bg-gray-200 sm:rounded-xl -translate-1/2 left-1/2 top-1/2 font-semibold sm:text-lg"
                   >
-                    <h3 class="text-center">View more projects</h3>
+                    <h3 class="text-center shrink-0">
+                      View more <span class="hidden sm:inline">projects</span>
+                    </h3>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -307,6 +309,7 @@
                       viewBox="0 0 24 24"
                       fill="none"
                       aria-hidden
+                      class="shrink-0"
                     >
                       <path
                         d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
@@ -356,6 +359,11 @@
             <li
               class="skill bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl shadow-md"
             >
+              TypeScript
+            </li>
+            <li
+              class="skill bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl shadow-md"
+            >
               React
             </li>
             <li
@@ -366,7 +374,12 @@
             <li
               class="skill bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl shadow-md"
             >
-              HTML & CSS
+              HTML
+            </li>
+            <li
+              class="skill bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl shadow-md"
+            >
+              CSS
             </li>
             <li
               class="skill bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl shadow-md"
@@ -391,17 +404,7 @@
             <li
               class="skill bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl shadow-md"
             >
-              PHP
-            </li>
-            <li
-              class="skill bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl shadow-md"
-            >
-              WordPress
-            </li>
-            <li
-              class="skill bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl shadow-md"
-            >
-              GraphQL
+              Motion
             </li>
             <li
               class="skill bg-gray-300 py-1.5 px-3 text-sm rounded-md lg:text-base lg:py-3 lg:px-6 text-center lg:rounded-xl shadow-md"
@@ -429,6 +432,42 @@
               + more
             </li>
           </ul>
+
+          <a
+            href="https://docs.google.com/document/d/1lQYbG-mK4nvutAybewJmvejElCXKHcCFUQTrewxF6yY/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="p-3 rounded-md text-sm flex w-fit underline mt-8 mx-auto items-center sm:items-start gap-2 sm:p-6 bg-gray-200 sm:rounded-xl font-semibold sm:text-lg"
+          >
+            <h3 class="text-center">View Resume</h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden
+            >
+              <path
+                d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                class="stroke-current stroke-2"
+              />
+              <path
+                d="M15 3H21V9"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                class="stroke-current stroke-2"
+              />
+              <path
+                d="M10 14L21 3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                class="stroke-current stroke-2"
+              />
+            </svg>
+          </a>
         </div>
       </section>
 
